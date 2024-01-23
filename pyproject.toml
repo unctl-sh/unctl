@@ -3,7 +3,7 @@ name = "unctl"
 packages = [
   {include = "unctl"}
 ]
-version = "1.0.0"
+version = "1.0.1"
 description = "A health check and RCA tool for kubernetes"
 authors = ["UnSkript Team <authors@unskript.com>"]
 readme = "README.md"
