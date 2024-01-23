@@ -1,0 +1,24 @@
+{
+    "Provider": "k8s",
+    "CheckID": "k8s_deployment_configmap_existence",
+    "CheckTitle": "Find Deployments with missing configmap",
+    "CheckType": [
+        "Infrastructure"
+    ],
+    "ServiceName": "configmap",
+    "SubServiceName":  "configmap",
+    "ResourceIdTemplate": "TBD",
+    "Severity": "High",
+    "ResourceType": "Other",
+    "Description": "Ensure the presence of referenced ConfigMaps in Deployment volumes, reporting failures for any missing ConfigMap for all the namespaces",
+    "Risk": "If the ConfigMap is critical for the application's operation, its absence could lead to application downtime or complete failure.",
+    "RelatedUrl": "",
+    "Categories": [
+        "Deployment"
+    ],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "PositiveMatch": "TBD",
+    "NegativeMatch": "TBD"
+}

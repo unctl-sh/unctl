@@ -1,0 +1,21 @@
+{
+    "Enabled": true,
+    "Provider": "k8s",
+    "CheckID": "k8s_deployment_zero_scale",
+    "CheckTitle": "Zero Scale Deployment Check",
+    "CheckType": ["Infrastructure"],
+    "ServiceName": "deployment",
+    "SubServiceName": "deployment",
+    "ResourceIdTemplate": "TBD",
+    "Severity": "High",
+    "ResourceType": "Deployment",
+    "Description": "Verify that Deployments have a non-zero replica count, preventing unintentional scaling down to zero",
+    "Risk": "High",
+    "RelatedUrl": "",
+    "Categories": ["Availability"],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "PositiveMatch": "{{resource_name}} has non-zero replicas",
+    "NegativeMatch": "{{resource_name}} is scaled to zero"
+}

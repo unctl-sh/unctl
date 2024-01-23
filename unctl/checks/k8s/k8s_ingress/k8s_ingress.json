@@ -1,0 +1,24 @@
+{
+  "Provider": "k8s",
+  "CheckID": "k8s_ingress",
+  "CheckTitle": "Check for the existence of Ingress class, service and secrets for all the namespaces",
+  "CheckType": [
+    "Infrastructure"
+  ],
+  "ServiceName": "ingress",
+  "SubServiceName":  "ingress",
+  "ResourceIdTemplate": "TBD",
+  "Severity": "High",
+  "ResourceType": "Other",
+  "Description": "Ensure proper Ingress configurations by validating associated services, secrets, and ingress classes, flagging issues if there are missing elements or misconfigured settings for all the namespaces",
+  "Risk": "The failures may lead to ingress not routing traffic to the intended services, SSL/TLS certificates not being valid, or Ingress controllers not functioning correctly, potentially impacting the availability and security of your applications",
+  "RelatedUrl": "",
+  "Categories": [
+    "Ingress"
+  ],
+  "DependsOn": [],
+  "RelatedTo": [],
+  "Notes": "",
+  "PositiveMatch": "Ready",
+  "NegativeMatch": "NotReady"
+}

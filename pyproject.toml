@@ -1,0 +1,57 @@
+[tool.poetry]
+name = "unctl"
+packages = [
+  {include = "unctl"}
+]
+version = "1.0.0"
+description = "A health check and RCA tool for kubernetes"
+authors = ["UnSkript Team <authors@unskript.com>"]
+maintainers = [
+  "Abhishek Saxena <abhishek@unskript.com>",
+  "Shloka Bhalgat <shloka@unskript.com>",
+  "Sourabh Kulkarni <sourabh@unskript.com>",
+  "Yurii Skrypnyk <yuriy@unskript.com>",
+  "Yaroslav Pankovych <yaroslav@unskript.com>"
+]
+[project.urls]
+homepage = "https://github.com/unctl-sh/unctl"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+colorama = "^0.4.6"
+prettytable = "^3.9.0"
+kubernetes = "^28.1.0"
+pydantic = "^2.4.2"
+croniter = "^2.0.1"
+toml = "^0.10.2"
+kubernetes-asyncio = "^28.2.1"
+aiomysql = "^0.2.0"
+cryptography = "^41.0.7"
+
+[tool.poetry.scripts]
+unctl = "unctl.__main__:unctl"
+
+[tool.poetry.group.dev.dependencies]
+python-semantic-release = "^8.3.0"
+black = "^23.10.1"
+pytest = "^7.4.3"
+pytest-asyncio = "^0.23.2"
+flake8 = "^6.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.semantic_release]
+version_toml = [
+  "pyproject.toml:tool.poetry.version"
+]
+build_command = "pip install poetry && poetry install && poetry build"
+
+[tool.pytest.ini_options]
+pythonpath = [
+  "."
+]
+
+[tool.black]
+line-length = 88

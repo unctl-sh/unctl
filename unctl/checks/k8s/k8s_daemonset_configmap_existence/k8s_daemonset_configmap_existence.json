@@ -1,0 +1,25 @@
+{
+  "Provider": "k8s",
+  "CheckID": "k8s_daemonset_configmap_existence",
+  "CheckTitle": "Validate existence of configmaps in daemonsets",
+  "CheckType": [
+    "Infrastructure"
+  ],
+  "ServiceName": "daemonset",
+  "SubServiceName": "daemonset",
+  "ResourceIdTemplate": "TBD",
+  "Severity": "High",
+  "ResourceType": "Other",
+  "Description": "Ensure the presence of referenced ConfigMaps in Daemonset volumes, reporting failures for any missing ConfigMap for all the namespaces",
+  "Risk": "If the ConfigMap is critical for the application's operation, its absence can lead to pod failures or misconfiguration, potentially causing application downtime.",
+  "RelatedUrl": "",
+  "Categories": [
+    "DaemonSet",
+    "ConfigMap"
+  ],
+  "DependsOn": [],
+  "RelatedTo": [],
+  "Notes": "",
+  "PositiveMatch": "TBD",
+  "NegativeMatch": "TBD"
+}

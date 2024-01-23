@@ -1,0 +1,21 @@
+{
+    "Enabled": true,
+    "Provider": "k8s",
+    "CheckID": "k8s_service_pod_label_match",
+    "CheckTitle": "Check if Kubernetes services have matching pod labels",
+    "CheckType": ["Infrastructure"],
+    "ServiceName": "service",
+    "SubServiceName": "service",
+    "ResourceIdTemplate": "TBD",
+    "Severity": "Medium",
+    "ResourceType": "K8s Service",
+    "Description": "This check validates if Kubernetes service selectors match pod labels. This ensures proper routing & discovery of pods.",
+    "Risk": "Possibility of misconfiguration causing service disruptions",
+    "RelatedUrl": "",
+    "Categories": ["Configuration"],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "Labels and their corresponding selectors form a key element for how services and pods interact in Kubernetes.",
+    "PositiveMatch": "The Kubernetes service has matching pod labels",
+    "NegativeMatch": "The Kubernetes service does not have matching pod labels"
+}

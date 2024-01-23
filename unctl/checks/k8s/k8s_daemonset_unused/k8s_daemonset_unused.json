@@ -1,0 +1,27 @@
+{
+    "Enabled": true,
+    "Provider": "k8s",
+    "CheckID": "k8s_daemonset_unused",
+    "CheckTitle": "Find unused DaemonSet",
+    "CheckType": [
+        "Infrastructure"
+    ],
+    "ServiceName": "daemonset",
+    "SubServiceName": "daemonset",
+    "ResourceIdTemplate": "TBD",
+    "Severity": "Low",
+    "ResourceType": "DaemonSet",
+    "Description": "Any DaemonSet that has been created but has no associated pods and remained unused for over 30 days.",
+    "Risk": "Unused resources can lead to increased costs and could potentially be used for malicious activities.",
+    "RelatedUrl": "https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/",
+    "Categories": [
+        "DaemonSet",
+        "Cost",
+        "Resource Optimization"
+    ],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "PositiveMatch": "DaemonSet has been unused for over 30 days.",
+    "NegativeMatch": "DaemonSet is in use."
+}

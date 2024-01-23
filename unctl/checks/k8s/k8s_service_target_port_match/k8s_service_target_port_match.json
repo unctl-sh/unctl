@@ -1,0 +1,21 @@
+{
+    "Enabled": true,
+    "Provider": "k8s",
+    "CheckID": "k8s_service_target_port_match",
+    "CheckTitle": "Services Target Port Match",
+    "CheckType": ["Infrastructure"],
+    "ServiceName": "service",
+    "SubServiceName": "service",
+    "ResourceIdTemplate": "TBD",
+    "Severity": "Medium",
+    "ResourceType": "Other",
+    "Description": "This check identifies service ports that do not match their target ports",
+    "Risk": "Mismatching ports may lead to communication issues in the service",
+    "RelatedUrl": "",
+    "Categories": ["Diagnostic"],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "PositiveMatch": "Service port does match target port",
+    "NegativeMatch": "Service port does not match target port"
+  }

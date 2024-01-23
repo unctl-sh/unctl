@@ -1,0 +1,24 @@
+{
+    "Provider": "k8s",
+    "CheckID": "k8s_netpol",
+    "CheckTitle": "Validate that network policies are in place and configured correctly",
+    "CheckType": [
+        "Infrastructure"
+    ],
+    "ServiceName": "networkpolicy",
+    "SubServiceName":  "podsecurity",
+    "ResourceIdTemplate": "TBD",
+    "Severity": "Medium",
+    "ResourceType": "Other",
+    "Description": "Verify Network Policy configurations, highlighting issues if policies allow traffic to all pods or if not applied to any specific pods",
+    "Risk": "The risk of not using NetworkPolicies for pods is an increased vulnerability to unauthorized network traffic, potentially compromising the security of your Kubernetes cluster.",
+    "RelatedUrl": "",
+    "Categories": [
+        "Network Security"
+    ],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "PositiveMatch": "TBD",
+    "NegativeMatch": "TBD"
+}

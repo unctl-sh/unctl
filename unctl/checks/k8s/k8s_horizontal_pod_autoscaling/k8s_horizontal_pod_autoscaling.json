@@ -1,0 +1,24 @@
+{
+  "Provider": "k8s",
+  "CheckID": "k8s_horizontal_pod_autoscaling",
+  "CheckTitle": "Analyzing HPAs, checking if scale targets exist and have resources",
+  "CheckType": [
+    "Infrastructure"
+  ],
+  "ServiceName": "pod",
+  "SubServiceName":  "pod",
+  "ResourceIdTemplate": "TBD",
+  "Severity": "High",
+  "ResourceType": "Other",
+  "Description": "Analyze optimal Horizontal Pod Autoscaler (HPA) configurations by ensuring associated resources (Deployments, ReplicationControllers, ReplicaSets, StatefulSets) have defined resource limits for effective auto-scaling",
+  "Risk": "Improper usage of HPA may lead to inefficient resource utilization, which may result in underutilization or overutilization of resources and increased infrastructure costs",
+  "RelatedUrl": "",
+  "Categories": [
+    "HPA"
+  ],
+  "DependsOn": [],
+  "RelatedTo": [],
+  "Notes": "",
+  "PositiveMatch": "TBD",
+  "NegativeMatch": "TBD"
+}

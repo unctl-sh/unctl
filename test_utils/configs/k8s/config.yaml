@@ -1,0 +1,17 @@
+apiVersion: v1
+clusters:
+- cluster:
+    certificate-authority-data: none
+    server: http://test-cluster
+  name: dev_test
+contexts:
+- context:
+    cluster: dev_test
+    user: dev_test
+  name: dev_test
+current-context: dev_test
+kind: Config
+preferences: {}
+users:
+- name: dev_test
+  user: {}

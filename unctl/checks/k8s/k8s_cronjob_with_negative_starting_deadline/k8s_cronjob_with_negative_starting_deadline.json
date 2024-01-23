@@ -1,0 +1,24 @@
+{
+  "Provider": "k8s",
+  "CheckID": "k8s_cronjob_with_negative_starting_deadline",
+  "CheckTitle": "Validate cronjob starting deadline",
+  "CheckType": [
+    "Infrastructure"
+  ],
+  "ServiceName": "cronjob",
+  "SubServiceName":  "cronjob",
+  "ResourceIdTemplate": "TBD",
+  "Severity": "High",
+  "ResourceType": "Other",
+  "Description": "Ensure CronJobs have a non-negative starting deadline, reporting failures for negative values for all the namespaces",
+  "Risk": "When negative value is set for startingDeadlineSeconds in a Kubernetes CronJob, it can lead to immediate job failures, resource contention, and cluster instability.",
+  "RelatedUrl": "",
+  "Categories": [
+    "CronJob"
+  ],
+  "DependsOn": [],
+  "RelatedTo": [],
+  "Notes": "",
+  "PositiveMatch": "TBD",
+  "NegativeMatch": "TBD"
+}

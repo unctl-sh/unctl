@@ -1,0 +1,24 @@
+{
+  "Provider": "k8s",
+  "CheckID": "k8s_statefulset_configmap_existence",
+  "CheckTitle": "Validate configmap existence in Statefulset",
+  "CheckType": [
+    "Infrastructure"
+  ],
+  "ServiceName": "statefulset",
+  "SubServiceName":  "statefulset",
+  "ResourceIdTemplate": "TBD",
+  "Severity": "High",
+  "ResourceType": "Other",
+  "Description": "Ensure the existence of referenced ConfigMaps in StatefulSet volume claims and template volumes, reporting failures for any missing ConfigMap for all the namespaces",
+  "Risk": "The risk of using an invalid ConfigMap in a StatefulSet is that it can lead to misconfigurations, application errors, and service disruptions in the pods managed by the StatefulSet.",
+  "RelatedUrl": "",
+  "Categories": [
+    "StatefulSet"
+  ],
+  "DependsOn": [],
+  "RelatedTo": [],
+  "Notes": "",
+  "PositiveMatch": "TBD",
+  "NegativeMatch": "TBD"
+}

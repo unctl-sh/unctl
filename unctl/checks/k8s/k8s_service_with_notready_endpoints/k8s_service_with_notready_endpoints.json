@@ -1,0 +1,25 @@
+{
+  "Enabled": true,
+  "Provider": "k8s",
+  "CheckID": "k8s_service_with_notready_endpoints",
+  "CheckTitle": "Service has endpoints that are NotReady.",
+  "CheckType": [
+    "Infrastructure"
+  ],
+  "ServiceName": "service",
+  "SubServiceName":  "service",
+  "ResourceIdTemplate": "TBD",
+  "Severity": "Severe",
+  "ResourceType": "Other",
+  "Description": "Highlights when services have NotReady endpoints, indicating potential disruptions to service reliability for all the namespaces",
+  "Risk": "When node is not ready, no pods can be scheduled to run on that node, causing dimished capacity issues.",
+  "RelatedUrl": "",
+  "Categories": [
+    "Health"
+  ],
+  "DependsOn": [],
+  "RelatedTo": [],
+  "Notes": "",
+  "PositiveMatch": "",
+  "NegativeMatch": "<none>"
+}

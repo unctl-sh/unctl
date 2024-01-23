@@ -1,0 +1,25 @@
+{
+  "Provider": "mysql",
+  "CheckID": "mysql_max_used_connections",
+  "CheckTitle": "Checks max used connections",
+  "CheckType": [
+    "Connection/Thread"
+  ],
+  "ServiceName": "global",
+  "SubServiceName":  "global",
+  "ResourceIdTemplate": "TBD",
+  "Severity": "High",
+  "ResourceType": "Other",
+  "Description": "Checks max used connections reaching max count",
+  "Risk": "TBD",
+  "RelatedUrl": "",
+  "Categories": [
+    "Connection",
+    "Thread"
+  ],
+  "DependsOn": [],
+  "RelatedTo": [],
+  "Notes": "",
+  "PositiveMatch": "TBD",
+  "NegativeMatch": "TBD"
+}

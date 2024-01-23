@@ -1,0 +1,21 @@
+{
+    "Enabled": true,
+    "Provider": "k8s",
+    "CheckID": "k8s_node_out_of_memory_check",
+    "CheckTitle": "Kubernetes Node Out-of-Memory Check",
+    "CheckType": ["Infrastructure"],
+    "ServiceName": "node",
+    "SubServiceName": "node",
+    "ResourceIdTemplate": "TBD",
+    "Severity": "High",
+    "ResourceType": "Node",
+    "Description": "Checks if any Kubernetes node is using more than 85% of its memory capacity.",
+    "Risk": "High memory usage can lead to performance degradation and unexpected node failures.",
+    "RelatedUrl": "https://kubernetes.io/docs/tasks/debug-application-cluster/debug-application/",
+    "Categories": ["Performance"],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "PositiveMatch": "Node is using more than 85% of its memory capacity.",
+    "NegativeMatch": "Node's memory usage is within acceptable limits."
+}

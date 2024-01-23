@@ -1,0 +1,25 @@
+{
+    "Provider": "k8s",
+    "CheckID": "k8s_pvc_pending",
+    "CheckTitle": "Check if a k8s PVC is in Pending state.",
+    "CheckType": [
+      "Infrastructure"
+    ],
+    "ServiceName": "pvc",
+    "SubServiceName":  "pvc",
+    "ResourceIdTemplate": "TBD",
+    "Severity": "Critical",
+    "ResourceType": "Other",
+    "Description": "Alerts on pending PVCs, highlighting potential delays in provisioning persistent volume claims for all the namespaces",
+    "Risk": "When a PVC remains in Pending state, the associated workload may fail to start due to lack of storage.",
+    "RelatedUrl": "",
+    "Categories": [
+      "Health"
+    ],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "PositiveMatch": "Bound",
+    "NegativeMatch": "Pending"
+  }
+  

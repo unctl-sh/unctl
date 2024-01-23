@@ -1,0 +1,24 @@
+{
+  "Provider": "k8s",
+  "CheckID": "k8s_pod_crashloopbackoff",
+  "CheckTitle": "Pod is in CrashLoopBackOff state.",
+  "CheckType": [
+    "Infrastructure"
+  ],
+  "ServiceName": "pod",
+  "SubServiceName":  "pod",
+  "ResourceIdTemplate": "TBD",
+  "Severity": "Critical",
+  "ResourceType": "Other",
+  "Description": "Identify pods with containers stuck in a CrashLoopBackOff state, highlighting potential issues impacting pod stability for all the namespaces",
+  "Risk": "TBD",
+  "RelatedUrl": "",
+  "Categories": [
+    "Health"
+  ],
+  "DependsOn": [],
+  "RelatedTo": [],
+  "Notes": "",
+  "PositiveMatch": "Running",
+  "NegativeMatch": "CrashLoopBackOff"
+}

@@ -1,0 +1,26 @@
+{
+    "Enabled": true,
+    "Provider": "k8s",
+    "CheckID": "k8s_insufficient_pids_on_node",
+    "CheckTitle": "Insufficient PIDs on Node",
+    "CheckType": [
+        "Infrastructure"
+    ],
+    "ServiceName": "node",
+    "SubServiceName": "node",
+    "ResourceIdTemplate": "TBD",
+    "Severity": "High",
+    "ResourceType": "Pod",
+    "Description": "Check if the nodes have remaining PIDs less than a set threshold",
+    "Risk": "High - Exhaustion of PIDs can lead to process creation failure.",
+    "RelatedUrl": "",
+    "Categories": [
+        "Performance"
+    ],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "PositiveMatch": "PASS",
+    "NegativeMatch": "FAIL"
+}
+

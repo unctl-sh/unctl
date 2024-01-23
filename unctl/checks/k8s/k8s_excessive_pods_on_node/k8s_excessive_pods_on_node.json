@@ -1,0 +1,24 @@
+{
+  "Provider": "k8s",
+  "CheckID": "k8s_excessive_pods_on_node",
+  "CheckTitle": "Excessive Pods on Node",
+  "CheckType": [
+    "Infrastructure"
+  ],
+  "ServiceName": "node",
+  "SubServiceName":  "node",
+  "ResourceIdTemplate": "TBD",
+  "Severity": "High",
+  "ResourceType": "Other",
+  "Description": "Assesses nodes for excessive pod counts, flagging potential issues if pods near capacity thresholds based on CPU and memory resources",
+  "Risk": "medium",
+  "RelatedUrl": "",
+  "Categories": [
+    "Resource Limits"
+  ],
+  "DependsOn": [],
+  "RelatedTo": [],
+  "Notes": "",
+  "PositiveMatch": "",
+  "NegativeMatch": ""
+}

@@ -1,0 +1,24 @@
+{
+  "Provider": "k8s",
+  "CheckID": "k8s_statefulset_service_validation",
+  "CheckTitle": "Verify StatefulSet has valid service",
+  "CheckType": [
+    "Infrastructure"
+  ],
+  "ServiceName": "statefulset",
+  "SubServiceName":  "statefulset",
+  "ResourceIdTemplate": "TBD",
+  "Severity": "High",
+  "ResourceType": "Other",
+  "Description": "Verify StatefulSet's service reference, ensuring it points to an existing service in all the namespaces, reporting failures for non-existent services",
+  "Risk": "The risk of using an invalid service name in StatefulSets is that it can lead to service discovery issues and potentially disrupt the functionality of your stateful applications.",
+  "RelatedUrl": "",
+  "Categories": [
+    "StatefulSet"
+  ],
+  "DependsOn": [],
+  "RelatedTo": [],
+  "Notes": "",
+  "PositiveMatch": "TBD",
+  "NegativeMatch": "TBD"
+}

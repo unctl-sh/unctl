@@ -1,0 +1,9 @@
+bin/*
+lib/*
+include/*
+**/__pycache__/*
+share/*
+.vscode/*
+.idea/*
+dist/
+pyvenv.cfg

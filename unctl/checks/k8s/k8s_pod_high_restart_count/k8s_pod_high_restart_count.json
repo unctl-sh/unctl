@@ -1,0 +1,25 @@
+{
+  "Enabled": true,
+  "Provider": "k8s",
+  "CheckID": "k8s_pod_high_restart_count",
+  "CheckTitle": "Pod has a high restart count.",
+  "CheckType": [
+    "Infrastructure"
+  ],
+  "ServiceName": "pod",
+  "SubServiceName":  "pod",
+  "ResourceIdTemplate": "TBD",
+  "Severity": "Critical",
+  "ResourceType": "Other",
+  "Description": "Identify pods for all the namespaces where certain containers have restarted more than 10 times, indicating potential instability concerns",
+  "Risk": "Frequent pod restarts can indicate issues with the pod's health, potentially impacting the stability and reliability of services running within the pod.",
+  "RelatedUrl": "",
+  "Categories": [
+    "Health"
+  ],
+  "DependsOn": [],
+  "RelatedTo": [],
+  "Notes": "",
+  "PositiveMatch": ">10",
+  "NegativeMatch": "<=10"
+}

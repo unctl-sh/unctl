@@ -1,0 +1,21 @@
+{
+    "Provider": "k8s",
+    "CheckID": "k8s_deployment_insufficient_replicas",
+    "CheckTitle": "Deployment has insufficient replicas.",
+    "CheckType": ["Infrastructure"],
+    "ServiceName": "deployment",
+    "SubServiceName":  "deployment",
+    "ResourceIdTemplate": "TBD",
+    "Severity": "Critical",
+    "ResourceType": "Other",
+    "Description": "Validate Deployments for the correct number of available replicas, highlighting any discrepancies between desired and available counts",
+    "Risk": "Under-provisioned deployments can cause service outages.",
+    "RelatedUrl": "",
+    "Categories": ["Health"],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "PositiveMatch": "Desired replica count matches available replica count.",
+    "NegativeMatch": "Desired replica count does not match available replica count."
+  }
+  

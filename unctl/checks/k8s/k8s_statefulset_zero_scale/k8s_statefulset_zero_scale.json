@@ -1,0 +1,25 @@
+{
+    "Enabled": true,
+    "Provider": "k8s",
+    "CheckID": "k8s_statefulset_zero_scale",
+    "CheckTitle": "Zero scale detected in statefulset",
+    "CheckType": [
+        "Infrastructure"
+    ],
+    "ServiceName": "statefulset",
+    "SubServiceName": "statefulset",
+    "ResourceIdTemplate": "TBD",
+    "Severity": "Medium",
+    "ResourceType": "StatefulSet",
+    "Description": "Check to ensure that no StatefulSets are scaled to zero as it might hamper availability.",
+    "Risk": "A StatefulSet scaled down to zero would mean that application is completely down",
+    "RelatedUrl": "",
+    "Categories": [
+        "Availability"
+    ],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "PositiveMatch": "StatefulSet {{resource_name}} is scaled above 0.",
+    "NegativeMatch": "StatefulSet {{resource_name}} is scaled to 0."
+}

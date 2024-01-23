@@ -1,0 +1,25 @@
+{
+    "Enabled": true,
+    "Provider": "k8s",
+    "CheckID": "k8s_daemonset_pod_template_validation",
+    "CheckTitle": "Pod template validation in DaemonSet",
+    "CheckType": [
+        "Infrastructure"
+    ],
+    "ServiceName": "daemonset",
+    "SubServiceName": "daemonset",
+    "ResourceIdTemplate": "TBD",
+    "Severity": "Medium",
+    "ResourceType": "DaemonSet",
+    "Description": "Checks that the Pod template within a DaemonSet is configured correctly according to certain threshold values.",
+    "Risk": "If a DaemonSet Pod don't have resource limits or has limits set too low, it can consume excessive resources causing other applications to suffer.",
+    "RelatedUrl": "",
+    "Categories": [
+        "Resource Management"
+    ],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "PositiveMatch": "Memory limit and CPU limit are adequately set.",
+    "NegativeMatch": "Memory limit and/or CPU limit are either not set or are less than required thresholds."
+}

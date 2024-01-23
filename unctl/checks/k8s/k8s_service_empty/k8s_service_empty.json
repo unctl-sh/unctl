@@ -1,0 +1,24 @@
+{
+  "Provider": "k8s",
+  "CheckID": "k8s_service_empty",
+  "CheckTitle": "Service has no endpoints.",
+  "CheckType": [
+    "Infrastructure"
+  ],
+  "ServiceName": "service",
+  "SubServiceName": "service",
+  "ResourceIdTemplate": "TBD",
+  "Severity": "Severe",
+  "ResourceType": "Other",
+  "Description": "Identify services with no associated endpoints, highlighting potential misconfigurations impacting service connectivity",
+  "Risk": "When node is not ready, no pods can be scheduled to run on that node, causing dimished capacity issues.",
+  "RelatedUrl": "",
+  "Categories": [
+    "Health"
+  ],
+  "DependsOn": [],
+  "RelatedTo": [],
+  "Notes": "",
+  "PositiveMatch": "TBD",
+  "NegativeMatch": "<none>"
+}

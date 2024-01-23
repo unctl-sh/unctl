@@ -1,0 +1,24 @@
+{
+  "Provider": "k8s",
+  "CheckID": "k8s_pods_pending",
+  "CheckTitle": "Find Pending Pods",
+  "CheckType": [
+    "Infrastructure"
+  ],
+  "ServiceName": "pod",
+  "SubServiceName":  "pod",
+  "ResourceIdTemplate": "TBD",
+  "Severity": "High",
+  "ResourceType": "Other",
+  "Description": "Ensure that Pods are not in a Pending state due to scheduling issues or container creation failures, and report relevant details for diagnostics",
+  "Risk": "high",
+  "RelatedUrl": "",
+  "Categories": [
+    "Health"
+  ],
+  "DependsOn": [],
+  "RelatedTo": [],
+  "Notes": "",
+  "PositiveMatch": "",
+  "NegativeMatch": "Pending"
+}

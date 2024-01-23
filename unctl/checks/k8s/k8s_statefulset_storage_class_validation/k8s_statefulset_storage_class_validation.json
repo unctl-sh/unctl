@@ -1,0 +1,24 @@
+{
+  "Provider": "k8s",
+  "CheckID": "k8s_statefulset_storage_class_validation",
+  "CheckTitle": "Verify StatefulSet has valid storageClass",
+  "CheckType": [
+    "Infrastructure"
+  ],
+  "ServiceName": "statefulset",
+  "SubServiceName":  "statefulset",
+  "ResourceIdTemplate": "TBD",
+  "Severity": "High",
+  "ResourceType": "Other",
+  "Description": "Validate StatefulSet's storage class, ensuring it references existing storage classes in the namespace, reporting failures for non-existent ones",
+  "Risk": "The risk of using an invalid StorageClass in a StatefulSet in Kubernetes is that it can lead to storage provisioning failures and disrupt the deployment and scaling of stateful applications.",
+  "RelatedUrl": "",
+  "Categories": [
+    "StatefulSet"
+  ],
+  "DependsOn": [],
+  "RelatedTo": [],
+  "Notes": "",
+  "PositiveMatch": "TBD",
+  "NegativeMatch": "TBD"
+}

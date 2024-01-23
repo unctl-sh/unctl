@@ -1,0 +1,25 @@
+{
+    "Provider": "k8s",
+    "CheckID": "k8s_pod_configmap_existence",
+    "CheckTitle": "Find Pods with missing configmap",
+    "CheckType": [
+        "Infrastructure"
+    ],
+    "ServiceName": "pod",
+    "SubServiceName": "pod",
+    "ResourceIdTemplate": "TBD",
+    "Severity": "High",
+    "ResourceType": "Other",
+    "Description": "Ensure the presence of referenced ConfigMaps in Pod containers and volumes, reporting failures for any missing ConfigMap for all the namespaces",
+    "Risk": "If the ConfigMap is critical for the application's operation, its absence could lead to misconfiguration, application errors, or pod failures due to missing or mismatched configuration data.",
+    "RelatedUrl": "",
+    "Categories": [
+        "Pod",
+        "ConfigMap"
+    ],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "PositiveMatch": "TBD",
+    "NegativeMatch": "TBD"
+}

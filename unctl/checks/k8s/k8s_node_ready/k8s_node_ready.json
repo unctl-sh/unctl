@@ -1,0 +1,25 @@
+{
+    "Provider": "k8s",
+    "CheckID": "k8s_node_ready",
+    "CheckTitle": "Check if the k8s node is in Ready state.",
+    "CheckType": [
+      "Infrastructure"
+    ],
+    "ServiceName": "node",
+    "SubServiceName":  "node",
+    "ResourceIdTemplate": "TBD",
+    "Severity": "Critical",
+    "ResourceType": "Other",
+    "Description": "Ensure node health by examining readiness conditions, signaling failures if any issues are detected in the node's status",
+    "Risk": "When node is not ready, no pods can be scheduled to run on that node, causing dimished capacity issues.",
+    "RelatedUrl": "",
+    "Categories": [
+      "Health"
+    ],
+    "DependsOn": [],
+    "RelatedTo": [],
+    "Notes": "",
+    "PositiveMatch": "Ready",
+    "NegativeMatch": "NotReady"
+}
+  
