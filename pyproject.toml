@@ -6,6 +6,7 @@ packages = [
 version = "1.0.0"
 description = "A health check and RCA tool for kubernetes"
 authors = ["UnSkript Team <authors@unskript.com>"]
+readme = "README.md"
 maintainers = [
   "Abhishek Saxena <abhishek@unskript.com>",
   "Shloka Bhalgat <shloka@unskript.com>",
