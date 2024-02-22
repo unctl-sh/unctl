@@ -25,8 +25,8 @@ class PrivateFeatureAction(BooleanOptionalAction):
 
 def add_demo_cli_flags(parser):
     group = parser.add_argument_group(
-        "Private features",
-        description="These features available only in a private version.",
+        "Licensed features",
+        description="These features available only in a licensed version.",
     )
     group.add_argument(
         "-e",
