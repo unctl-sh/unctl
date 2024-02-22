@@ -246,8 +246,8 @@ options:
   --list-categories     List available categories
   --list-services       List available services
 
-Private features:
-  These features available only in a private version.
+Licensed features:
+  These features available only in a licensed version.
 
   -e, --explain, --no-explain
                         Explain failures
